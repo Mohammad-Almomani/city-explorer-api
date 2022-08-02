@@ -1,30 +1,40 @@
-
-const express = require("express");
+'use strict';
 
 require('dotenv').config();
+const express = require("express");
 const cors = require('cors');
+
 const app = express();
 app.use(cors());
-const weatherData = require('./data/weather.json')
+
+const weatherData = require('./data/weather.json');
 
 const port = process.env.PORT || 3001;
 
-let data =[];
+
 
 app.get('/weather', (req, res) => {
   console.log(req.query.name);
-  let x = weatherData.find(a=> a.city_name==req.query.name);
-  console.log(x);
-  data.push(x);
-  res.json({'data': data});
+  let searchName = req.query.name;
+  let data = weatherData.find(a=> a.city_name.toLowerCase()===searchName.toLowerCase());
+  console.log(data);
+  console.log(searchName);
+  try{
+    const dataArr = data.data.map(day => new Forecast(day));
+    res.status(200).send(dataArr);
+  } catch(err){
+    res.status(500).send('City not found');
+  }
+
 });
 
-app.get('/', (req,res) => {
-  const newBook = req.params;
-  data = newBook;
-  console.log(req.body);
-  res.send(req.params);
-});
+class Forecast {
+  constructor(day) {
+    this.date = day.valid_date;
+    this.description = day.weather.description;
+  }
+}
+
 
 app.listen(port,() => {
   console.log(`hello from port ${port} `);
