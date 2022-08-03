@@ -1,8 +1,8 @@
 # city-explorer-api
 
 
-**Author**: Your Name Goes Here
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Author**: Mohammad Almomani
+**Version**: 1.0.0 
 
 
 class 7
@@ -12,6 +12,11 @@ class 7
 
 class 8
 
+![](unknown.png)
+
+class 9
+
+same as yesterday 
 ![](unknown.png)
 
 
@@ -33,7 +38,7 @@ backend server for my website 'city explorer'
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
-my great college Omar Qatta
+my great college Omar Qattan
 
 
 Name of feature: 2, axios and dotenv
@@ -45,3 +50,16 @@ Start time: 6:00Pm
 Finish time: 10:00PM
 
 Actual time needed to complete: 3 hours
+
+
+## class 9
+
+Name of feature: 2, require and module
+
+Estimate of time needed to complete: 20 minutes
+
+Start time: 12:00Pm
+
+Finish time: 12:15PM
+
+Actual time needed to complete: 10 minutes
