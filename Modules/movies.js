@@ -9,7 +9,7 @@ async function handleMovies (req, res){
   try{
     res.send(movieArr)
   } catch(err){
-    // res.status(500).send('Movie not found');
+    console.log('Movie not found');
   }
   
 }
