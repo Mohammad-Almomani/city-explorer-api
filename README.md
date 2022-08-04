@@ -19,6 +19,11 @@ class 9
 same as yesterday 
 ![](unknown.png)
 
+class 10
+
+same as yesterday 
+![](unknown.png)
+
 
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
@@ -63,3 +68,21 @@ Start time: 12:00Pm
 Finish time: 12:15PM
 
 Actual time needed to complete: 10 minutes
+
+
+## class 10 
+
+Consider: Under what circumstances does your server cache get completely reset?
+
+when we reset the server, for me, I also added a condition to update the weather daily, depending on the date of the saved day and the current date.
+
+
+Name of feature: 2, new Date, and conditions
+
+Estimate of time needed to complete: 20 minutes
+
+Start time: 12:00Pm
+
+Finish time: 12:15PM
+
+Actual time needed to complete: 15 minutes
