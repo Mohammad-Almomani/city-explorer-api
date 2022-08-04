@@ -6,11 +6,10 @@ const cache = require ('./cache');
 let dateFormat = new Date();
 
 let date = ("0" + dateFormat.getDate()).slice(-2), month = ("0" + (dateFormat.getMonth() + 1)).slice(-2), year = dateFormat.getFullYear(),hours = dateFormat.getHours(),minutes = dateFormat.getMinutes();
-let currentDate = `${year}-${month}`;
+let currentDate = `${year}-${month}-${date}`;
 
 let dataSaveTime = `${year}-${month}-${date} ${hours}:${minutes}`;
 
-console.log(dataSaveTime);
 
 
 async function handleWeather(req, res) {
